@@ -1,0 +1,156 @@
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+}
+/* Navbar CSS */
+.navbar-brand {
+  letter-spacing: 2px;
+}
+.navbar-nav a{
+  font-size: 1.5rem;
+}
+/*  */
+
+/* Card */
+.card {
+  transition: all .5s ease;
+  width: 30rem;
+}
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 1.5rem 0.5rem rgba(144, 121, 71, 0.451);
+}
+/*  */
+
+/* Product Details */
+.product img{
+  transition: all .5s ease;
+}
+.product img:hover{
+  transform: scale(1.1);
+}
+/*  */
+
+.text-center{
+  letter-spacing: 1px;
+}
+/* pagination style */
+.paginationBtn {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.paginationBtn a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(4, 122, 168);
+  color: rgb(4, 122, 168);
+  cursor: pointer;
+}
+.paginationBtn a:hover {
+  color: white;
+  background-color: rgb(4, 122, 168);
+}
+.paginationActive a {
+  color: white;
+  background-color: rgb(4, 122, 168);
+}
+
+/* search style */
+.searchInputs {
+  margin-top: 50px;
+  display: flex;
+}
+.search input{
+  background-color: rgb(220, 214, 214);
+  border: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 350px;
+}
+.searchIcon {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(220, 214, 214);
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
+/* sortBtn style */
+.sortByPriceBtn {
+  position: relative;
+  left: 20px;
+  background-color: rgb(220, 214, 214);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #4e4c4c;
+  padding: 10px;
+  margin-right: 10px;
+  width: 70px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sortByPriceBtn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.sortByPriceBtn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/* Profile style */
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+  
+}
+.profile img:hover {
+  box-shadow: 0 0 5px 5px rgb(196, 233, 224);
+  transition: all 0.5s
+
+}
+/* checkout style */
+.price {
+  font-weight: 600;
+  font-size: larger;
+}
